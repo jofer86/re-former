@@ -1,4 +1,4 @@
-<h1>add a new user</h1>
+<h1>Add a new user</h1>
 
 <%# <form accept-charset="UTF-8" action="/users" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token ">
@@ -29,6 +29,18 @@
 
   <% end %>
 -->
+
+<% if @user.errors.any? %>
+<div>
+ <%= pluralize(@user.errors.count, 'error') %> prohibited the submission of the form : 
+  <ul>
+    <% @user.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
+</div>
+<%end%>
+
 
 <%= form_for @user do |f|%>
 

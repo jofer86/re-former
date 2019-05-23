@@ -30,6 +30,17 @@
   <% end %>
 -->
 
+<% if @user.errors.any? %>
+<div>
+ <%= pluralize(@user.errors.count, 'error') %> prohibited the submission of the form : 
+  <ul>
+    <% @user.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
+</div>
+<%end%>
+
 <%= form_for @user do |f|%>
 
   <%= f.label :username %>
