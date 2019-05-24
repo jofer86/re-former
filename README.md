@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the 'Re-Former' project, which is part of the Rails section for the Microverse Program.
 
-Things you may want to cover:
+## Built by:
 
-* Ruby version
+## Jorge Fernando Rincón Figueroa [Github Page](https://github.com/jofer86).
 
-* System dependencies
+## Ahmed Mahfoudh [Github Page](https://github.com/stratospherique).
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
